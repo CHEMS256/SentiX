@@ -1,5 +1,5 @@
 
-# Sentix 🧠
+# SentiX 
 ### Analyseur de Sentiments Intelligent Multilingue
 <div align="center">
   <img src="https://img.shields.io/badge/Version-2.0-blue.svg" alt="Version">
@@ -37,7 +37,7 @@
 
 ## À Propos
 
-**Sentix** est une application web intelligente conçue pour analyser les sentiments des avis clients en temps réel. Développée avec **Flask** (Python) pour le backend et une interface frontend moderne, elle se distingue par sa capacité à traiter des données multilingues, y compris le **Français, l'Anglais, l'Arabe littéraire et le Darija (Marocain)**.
+**SentiX** est une application web intelligente conçue pour analyser les sentiments des avis clients en temps réel. Développée avec **Flask** (Python) pour le backend et une interface frontend moderne, elle se distingue par sa capacité à traiter des données multilingues, y compris le **Français, l'Anglais, l'Arabe littéraire et le Darija (Marocain)**.
 
 Le projet utilise une approche hybride combinant des règles linguistiques contextuelles et le Machine Learning (Random Forest / TF-IDF) pour offrir une analyse précise même sur des textes courts ou informels.
 
@@ -110,6 +110,7 @@ Créez un fichier `requirements.txt` contenant :
 
 ```text
 Flask
+requests
 pandas
 numpy
 scikit-learn
@@ -121,11 +122,12 @@ werkzeug
 ### Structure des Dossiers
 Assurez-vous que votre projet respecte cette arborescence :
 ```
-sentix/
+sentiX/
 │
 ├── app.py                # Serveur Flask et logique ML
 ├── index.html            # Interface utilisateur
 ├── requirements.txt      # Dépendances
+├── vercel.json
 │
 ├── uploads/              # Dossier temporaire pour les fichiers reçus
 └── resultats_analyse/    # Dossier où sont stockés les rapports Excel
