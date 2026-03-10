@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SentiX - Analyseur Intelligent</title>
+    <title>Sentix - Analyseur Intelligent</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -94,9 +94,9 @@
         .tag-neutre { background: rgba(255, 255, 255, 0.1); color: #bdc3c7; }
         /* Conteneur pour le tableau complet avec scroll */
 .table-wrapper {
-    max-height: 500px;       
-    overflow-y: auto;        
-    border-radius: 10px;     
+    max-height: 500px;       /* Hauteur max avant scroll */
+    overflow-y: auto;        /* Active le scroll vertical */
+    border-radius: 10px;     /* Optionnel : bordures arrondies */
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -114,6 +114,7 @@ thead th {
     <div class="container">
         <header>
             <h1>Sentix</h1>
+            <div id="modelStatus" class="status-badge">Serveur Python Actif</div>
         </header>
         <div class="upload-area" id="dropZone">
             <span class="upload-icon">📁</span>
@@ -248,4 +249,3 @@ thead th {
 </body>
 
 </html>
-
